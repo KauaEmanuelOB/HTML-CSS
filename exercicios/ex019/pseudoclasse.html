@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e pseudo-elementos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font: normal normal 16px arial, sans-serif;
+        }
+        .div {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .div:hover {
+            background-color: red;
+        }
+        .div:active {
+            background-color: green;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(54, 87, 87);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #especial::after {
+            content: '<<';
+        }
+        #especial::before {
+            content: '>>';
+        }
+        a:active {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Brincando com Pseudo-classes e Pseudo-elementos</h1>
+    <h2>Mudando de cor passando o mouse e pressionando</h2>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <h2>Texto escondido</h2>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>Passe o mouse aqui<p>texto escondido.</p></div>
+    <p>Obrigado pela atenção</p>
+    <h2>Personalizando links</h2>
+    <h3>TOP animes do MyAnimeList</h3>
+    <ol>
+        <li><a target="_blank" href="https://myanimelist.net/anime/52991/Sousou_no_Frieren">Sousou no Frieren</a></li>
+        <li><a target="_blank" href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood">Fullmetal Alchemist: Brotherhood</a></li>
+        <li><a target="_blank" id="especial" href="https://myanimelist.net/anime/60022/One_Piece_Fan_Letter">One Piece Fan Letter</a></li>
+    </ol>
+</body>
+</html>
