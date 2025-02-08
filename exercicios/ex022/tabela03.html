@@ -4,42 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-        * {
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
             border-collapse: collapse;
             width: 300px;
+            text-align: center;
         }
         td {
             border: 1px black solid;
-            padding: 5px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Primeira Tabela</h1>
+    <h1>Mesclagem de células</h1>
     <table>
         <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td>A</td>
+            <td colspan="2">B</td>
         </tr>
         <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
         </tr>
         <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td>H</td>
+            <td>I</td>
         </tr>
         <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td>K</td>
+            <td>L</td>
         </tr>
     </table>
 </body>
